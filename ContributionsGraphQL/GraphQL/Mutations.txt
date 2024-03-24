@@ -1,0 +1,25 @@
+﻿Url: http://localhost:portno/Contribution
+
+//Insert a Contribution
+{
+    "OperationName":"",
+    "NamedQuery":"",
+    "query":"mutation {createContribution(createContributionInput:{contributionId:4,taskID:3,userID:8,timeSpent:\"3.5\",description:\"Demo Test to demo desc insserted\"}){contributionId,taskID,userID,timeSpent,description}}",
+    "Variables":{}
+}
+
+//Update a Contribution
+{
+    "OperationName":"",
+    "NamedQuery":"",
+    "query":"mutation {updateContribution(updateContributionInput:{contributionId:7,taskID:5,userID:4,timeSpent:\"46.5\",description:\"TRnnnnhhhRR Test to demo description\"}){contributionId,taskID,userID,timeSpent,description}}",
+    "Variables":{}
+}
+
+//Delete a Contribution
+{
+    "OperationName":"",
+    "NamedQuery":"",
+    "query":"mutation {deleteContribution(contributionId:5)}",
+    "Variables":{}
+}
