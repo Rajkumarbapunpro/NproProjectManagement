@@ -1,0 +1,6 @@
+@ContributionsApi._HostAddress = http://localhost:5213
+
+GET {{ContributionsApi._HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
