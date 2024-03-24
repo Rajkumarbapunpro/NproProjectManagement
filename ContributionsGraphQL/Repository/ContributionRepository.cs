@@ -1,11 +1,8 @@
 ﻿using ContributionsGraphQL.Dapper;
 using ContributionsGraphQL.Models;
 using ContributionsGraphQL.Repository.Interface;
-using ContributionsGraphQL.Type;
 using Dapper;
-using System;
 using System.Data;
-using System.Threading.Tasks;
 
 namespace ContributionsGraphQL.Repository
 {
@@ -36,7 +33,7 @@ namespace ContributionsGraphQL.Repository
             }
             return null;
         }
-        public async Task<Models.Contributions> GetContributionByIdAsync(int contributionId)
+        public async Task<Contributions> GetContributionByIdAsync(int contributionId)
         {
             var query = "SELECT * FROM Contributions WHERE ContributionId = @ContributionId";
             try
@@ -74,11 +71,10 @@ namespace ContributionsGraphQL.Repository
                     return contribution;
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                var s = ex.Message;
+                throw;
             }
-            return null;
         }
         public async Task<Contributions> UpdateContributionAsync(Contributions contribution)
         {
@@ -102,11 +98,10 @@ namespace ContributionsGraphQL.Repository
                     return contribution;
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                var s = ex.Message;
+                throw;
             }
-            return null;
         }
         public async Task<bool> DeleteContributionAsync(int contributionId)
         {
@@ -120,11 +115,10 @@ namespace ContributionsGraphQL.Repository
                     return noOfRowsAffected == 0 ? false : true;
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                var s = ex.Message;
+                throw;
             }
-            return false;
         }
     }
 }

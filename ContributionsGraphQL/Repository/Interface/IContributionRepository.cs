@@ -1,5 +1,4 @@
 ﻿using ContributionsGraphQL.Models;
-using ContributionsGraphQL.Type;
 
 namespace ContributionsGraphQL.Repository.Interface
 {

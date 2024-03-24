@@ -1,5 +1,6 @@
 ﻿using ContributionsGraphQL.Models;
 using GraphQL.Types;
+
 namespace ContributionsGraphQL.Type
 {
     public class ContributionsInfoType : ObjectGraphType<Contributions>

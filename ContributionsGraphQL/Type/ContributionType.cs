@@ -3,7 +3,7 @@ using GraphQL.Types;
 
 namespace ContributionsGraphQL.Type
 {
-    public class ContributionType : ObjectGraphType<Models.Contributions>
+    public class ContributionType : ObjectGraphType<Contributions>
     {
         public ContributionType()
         {

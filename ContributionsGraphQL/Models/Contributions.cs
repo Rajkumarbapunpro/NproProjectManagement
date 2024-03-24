@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ContributionsGraphQL.Models
+﻿namespace ContributionsGraphQL.Models
 {
     public class Contributions
     {

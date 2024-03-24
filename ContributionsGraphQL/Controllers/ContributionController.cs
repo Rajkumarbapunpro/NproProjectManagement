@@ -1,6 +1,5 @@
 ﻿using GraphQL.Types;
 using GraphQL;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ContributionsGraphQL.Query;
 

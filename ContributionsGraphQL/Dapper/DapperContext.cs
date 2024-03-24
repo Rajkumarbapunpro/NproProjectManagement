@@ -6,7 +6,7 @@ namespace ContributionsGraphQL.Dapper
     public class DapperContext
     {
         private readonly IConfiguration _configuration;
-        private readonly string _connectionString;
+        private readonly string _connectionString = string.Empty;
 
         public DapperContext(IConfiguration configuration)
         {

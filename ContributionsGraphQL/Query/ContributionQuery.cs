@@ -1,9 +1,6 @@
-﻿using ContributionsGraphQL.Models;
-using ContributionsGraphQL.Repository.Interface;
+﻿using ContributionsGraphQL.Repository.Interface;
 using ContributionsGraphQL.Type;
-using GraphQL;
 using GraphQL.Types;
-using System.Xml.Linq;
 
 namespace ContributionsGraphQL.Query
 {
