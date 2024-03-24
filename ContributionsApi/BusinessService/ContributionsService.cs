@@ -34,10 +34,9 @@ namespace ContributionsApi.BusinessService
             return contribution;
         }
 
-        public async Task<string> DeleteContributionAsync(int contributionId)
+        public async Task<bool> DeleteContributionAsync(int contributionId)
         {
-            var response = await _repository.DeleteContributionAsync(contributionId);
-            return response == true ? "Successfully deleted the contribution" : "Failed to delete contribution";
+            return await _repository.DeleteContributionAsync(contributionId);
         }
     }
 }

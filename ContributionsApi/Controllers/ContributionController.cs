@@ -32,7 +32,7 @@ namespace ContributionsApi.Controllers
             var contributions = await _contributionsService.GetContributionsAsync();
             if (contributions== null)
             {
-                return BadRequest("Error while reading contribution");
+                return BadRequest("Error while reading contributions");
             }
 
             return Ok(contributions);
@@ -60,6 +60,19 @@ namespace ContributionsApi.Controllers
             }
 
             return Ok(contribution);
+        }
+
+
+        [HttpDelete("DeleteContributionByIdAsync/{contributionId}")]
+        public async Task<IActionResult> DeleteContributionByIdAsync(int contributionId)
+        {
+            var response = await _contributionsService.DeleteContributionAsync(contributionId);
+            if (!response)
+            {
+                return BadRequest("Failed to delete contribution");
+            }
+
+            return Ok("Successfully deleted the contribution");
         }
     }
 }

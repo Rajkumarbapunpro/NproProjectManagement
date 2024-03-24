@@ -10,6 +10,6 @@ namespace ContributionsApi.BusinessService.Interface
         Task<List<Contributions>> GetContributionsAsync();
         Task<Contributions> PostContributionAsync(Contributions model);
         Task<Contributions> PutContributionAsync(Contributions model);
-        Task<string> DeleteContributionAsync(int contributionId);
+        Task<bool> DeleteContributionAsync(int contributionId);
     }
 }
