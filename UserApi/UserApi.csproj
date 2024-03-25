@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\User\Common\Common.csproj" />
-    <ProjectReference Include="..\User\Repositories\Repositories.csproj" />
-    <ProjectReference Include="..\User\Services\Services.csproj" />
+    <ProjectReference Include="..\UserInfrastructure\Common\Common.csproj" />
+    <ProjectReference Include="..\UserInfrastructure\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\UserInfrastructure\Services\Services.csproj" />
   </ItemGroup>
 
 </Project>
