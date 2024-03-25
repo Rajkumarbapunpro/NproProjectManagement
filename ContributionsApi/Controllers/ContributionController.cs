@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ContributionsApi.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ContributionController : ControllerBase
     {
@@ -38,7 +38,7 @@ namespace ContributionsApi.Controllers
             return Ok(contributions);
         }
 
-        [HttpPost]
+        [HttpPost("PostContribution")]
         public async Task<IActionResult> PostContributionAsync([FromBody] Contributions model)
         {
             var contribution= await _contributionsService.PostContributionAsync(model);
@@ -50,7 +50,7 @@ namespace ContributionsApi.Controllers
             return Ok(contribution);
         }
 
-        [HttpPut]
+        [HttpPut("PutContribution")]
         public async Task<IActionResult> PutContributionAsync([FromBody] Contributions model)
         {
             var contribution = await _contributionsService.PutContributionAsync(model);
