@@ -1,0 +1,17 @@
+﻿Url: http://localhost:portno/Contribution
+
+//Get Contribution By ID Query
+{
+    "OperationName":"",
+    "NamedQuery":"",
+    "query":"query { contribution(contributionId:1){ contributionId, description }}",
+    "Variables":{}
+}
+
+//Get All Contribution
+{
+    "OperationName":"",
+    "NamedQuery":"",
+    "query":"query { contributions{ contributionId, description,taskID, timeSpent }}",
+    "Variables":{}
+}
