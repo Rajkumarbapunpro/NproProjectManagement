@@ -1,6 +1,6 @@
 @NproProjectManagement.ApiGateway_HostAddress = http://localhost:5136
 
-GET {{NproProjectManagement.ApiGateway_HostAddress}}/weatherforecast/
+GET {{NproProjectManagement.ApiGateway_HostAddress}}/Contribution/
 Accept: application/json
 
 ###

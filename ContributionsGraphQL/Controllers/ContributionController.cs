@@ -5,7 +5,7 @@ using ContributionsGraphQL.Query;
 
 namespace ContributionsGraphQL.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ContributionController : ControllerBase
     {
