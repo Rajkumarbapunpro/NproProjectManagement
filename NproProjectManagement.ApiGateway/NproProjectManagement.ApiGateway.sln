@@ -6,7 +6,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NproProjectManagement.ApiGa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContributionsGraphQL", "..\ContributionsGraphQL\ContributionsGraphQL.csproj", "{26EF5C46-9B32-4479-AB3C-E299EA252A6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContributionsApi", "..\ContributionsApi\ContributionsApi.csproj", "{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContributionsApi", "..\ContributionsApi\ContributionsApi.csproj", "{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInfrastructure", "UserInfrastructure", "{545BB7C8-2602-48A3-89B2-D7B3C54E5317}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\UserInfrastructure\Common\Common.csproj", "{C71939DC-85E3-4984-BE4F-C0CB169E7CA2}"
@@ -19,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApi", "..\UserApi\UserA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectApi", "..\ProjectApi\ProjectApi.csproj", "{529F68FF-CA28-4857-8881-3B4C1890FE59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskApi", "TaskApi\TaskApi.csproj", "{2760CDF2-D7F2-4A15-9686-FB79D8B4201F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApi", "..\TaskApi\TaskApi.csproj", "{E7600DED-CA67-4A87-9970-8EDAA481A6DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,11 +60,11 @@ Global
 		{529F68FF-CA28-4857-8881-3B4C1890FE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529F68FF-CA28-4857-8881-3B4C1890FE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529F68FF-CA28-4857-8881-3B4C1890FE59}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2760CDF2-D7F2-4A15-9686-FB79D8B4201F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2760CDF2-D7F2-4A15-9686-FB79D8B4201F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2760CDF2-D7F2-4A15-9686-FB79D8B4201F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2760CDF2-D7F2-4A15-9686-FB79D8B4201F}.Release|Any CPU.Build.0 = Release|Any CPU
-  EndGlobalSection
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
