@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
@@ -6,6 +5,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NproProjectManagement.ApiGateway", "NproProjectManagement.ApiGateway\NproProjectManagement.ApiGateway.csproj", "{99356249-9E26-425D-B368-63E1B84D580B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContributionsGraphQL", "..\ContributionsGraphQL\ContributionsGraphQL.csproj", "{26EF5C46-9B32-4479-AB3C-E299EA252A6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContributionsApi", "..\ContributionsApi\ContributionsApi.csproj", "{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInfrastructure", "UserInfrastructure", "{545BB7C8-2602-48A3-89B2-D7B3C54E5317}"
 EndProject
@@ -19,6 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApi", "..\UserApi\UserA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectApi", "..\ProjectApi\ProjectApi.csproj", "{529F68FF-CA28-4857-8881-3B4C1890FE59}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApi", "..\TaskApi\TaskApi.csproj", "{E7600DED-CA67-4A87-9970-8EDAA481A6DA}"
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskApi", "..\TaskApi\TaskApi.csproj", "{F7B05CD3-4535-4B79-A0B7-D4C0E54FE9BB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentApi", "..\CommentApi\CommentApi.csproj", "{71F62F67-A605-44F8-8F54-44B3BE32082A}"
@@ -37,6 +39,10 @@ Global
 		{26EF5C46-9B32-4479-AB3C-E299EA252A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26EF5C46-9B32-4479-AB3C-E299EA252A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26EF5C46-9B32-4479-AB3C-E299EA252A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0E4B3F-8B39-4B80-9A93-A7A453DC3CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C71939DC-85E3-4984-BE4F-C0CB169E7CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C71939DC-85E3-4984-BE4F-C0CB169E7CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C71939DC-85E3-4984-BE4F-C0CB169E7CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +63,10 @@ Global
 		{529F68FF-CA28-4857-8881-3B4C1890FE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529F68FF-CA28-4857-8881-3B4C1890FE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529F68FF-CA28-4857-8881-3B4C1890FE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7600DED-CA67-4A87-9970-8EDAA481A6DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7B05CD3-4535-4B79-A0B7-D4C0E54FE9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7B05CD3-4535-4B79-A0B7-D4C0E54FE9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7B05CD3-4535-4B79-A0B7-D4C0E54FE9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU

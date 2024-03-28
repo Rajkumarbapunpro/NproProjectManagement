@@ -75,13 +75,42 @@ namespace ProjectManagement.Services
             }
         }
 
+        public async Task<List<TaskManagementDTO>> GetTaskDetailByProjectId(int Projectid)
+        {
+            try
+            {
+                List<TaskManagementDTO> result = await _unitOfWork.TaskManagement
+                    .Where(task => task.ProjectID == Projectid)
+                    .OrderByDescending(task => task.Deadline)
+                    .Select(task => new TaskManagementDTO
+                    {
+                        TaskID = task.TaskID,
+                        Title = task.Title,
+                        Deadline = task.Deadline,
+                        ProjectID = task.ProjectID,
+                        Status = task.Status,
+                        Description = task.Description
+                    })
+                    .ToListAsync();
+
+                int totalCount = result.Count;
+                result.ForEach(dto => dto.TaskCount = totalCount);
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<TaskManagementDTO> SaveTaskDetail(TaskManagementDTO taskManagementDTO)
         {
             try
             {
                 // Check if taskManagementDTO is null
                 if (taskManagementDTO == null)
-                {
+                {  
                     // Set default error response
                     return new TaskManagementDTO { Status = "Task data is null." };
                 }
